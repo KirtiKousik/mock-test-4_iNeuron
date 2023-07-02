@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+
+/* ------------ general ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: #000;
+}
+
+.offer {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background-color: #241c15;
+  color: white;
+  font-weight: 300;
+}
+
+.offer span {
+  text-decoration: dashed underline;
+  padding-left: 3px;
+}
+
+.cookies {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  background-color: #241c15;
+  color: white;
+  font-weight: 300;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.cookies p {
+  width: 67%;
+  font-size: 14px;
+}
+
+.cookies span {
+  text-decoration: underline;
+}
+.cookies-btn {
+  background-color: transparent;
+  border: 1.2px solid white;
+  color: white;
+  padding: 15px 50px;
+}
+.cookies i {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+/* ------------ header ----------- */
+header {
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-left {
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.nav-middle {
+  width: 20%;
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.sales {
+  flex-direction: column;
+  align-items: end;
+}
+
+.fa-magnifying-glass {
+  font-size: 25px;
+}
+
+select {
+  border: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1.2px solid #000;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.signup-btn {
+  background-color: gold;
+}
+
+/* ------------ hero ----------- */
+.hero {
+  width: 100%;
+}
+
+.hero-left {
+  width: 50%;
+  padding-inline: 50px;
+}
+
+.hero-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 {
+  font-family: "Bacasime Antique", serif;
+  font-size: 60px;
+  line-height: 0.9;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.hero-left .btn {
+  margin-top: 50px;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right img {
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+
+    <style>
+      body {
+        margin: 40px;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 200px 200px 200px;
+        background-color: #fff;
+        color: #444;
+      }
+
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        min-height: 100px;
+        background-image: url("dog.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .a {
+        grid-column: 1;
+      }
+      .b {
+        grid-column: 2;
+      }
+      .c {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+      }
+      .d {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .e {
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .f {
+        grid-column: 3;
+        grid-row: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box a"></div>
+      <div class="box b"></div>
+      <div class="box c"></div>
+      <div class="box d"></div>
+      <div class="box e"></div>
+      <div class="box f"></div>
+    </div>
+  </body>
+</html>

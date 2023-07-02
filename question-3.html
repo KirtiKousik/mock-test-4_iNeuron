@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION-3</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #181717;
+    }
+    div {
+      width: 60%;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 20px;
+      font-weight: 25px;
+      font-family: sans-serif;
+      background-color: #373131;
+      color: #f5f5f5;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #181717;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #181717;
+    }
+
+    .global-context {
+      font-weight: bold;
+    }
+
+    .function-context {
+      background-color: #eaf6ff;
+      color: #181717;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Execution context in JavaScript</h1>
+      <p>
+        Execution context is an important concept in JavaScript that defines the
+        environment in which code is executed. It includes variables, functions,
+        and objects that are accessible during the execution of a particular
+        piece of code. Understanding execution contexts is crucial for
+        understanding how JavaScript code is executed.
+      </p>
+
+      <p>
+        There are three types of execution contexts in JavaScript: <br /><br />
+
+        1. Global Execution Context: This is the default or outermost execution
+        context. It represents the global scope and is created when the
+        JavaScript engine starts executing the script. All variables and
+        functions declared outside of any function belong to the global
+        execution context. There is only one global execution context per page.
+        <br /><br />
+
+        2. Function Execution Context: A new function execution context is
+        created whenever a function is invoked or called. Each function has its
+        own execution context, which includes function-specific variables,
+        parameters, and inner functions. Function execution contexts are created
+        and destroyed as functions are invoked and completed. <br /><br />
+
+        3. Eval Execution Context: The eval function in JavaScript can be used
+        to execute code dynamically. When eval is used, a new execution context
+        called the eval execution context is created. It represents the scope of
+        the evaluated code.
+      </p>
+
+      <br />
+
+      <table>
+        <tr>
+          <th colspan="2" class="global-context">Global Execution Context</th>
+        </tr>
+        <tr>
+          <td colspan="2">Global Variables</td>
+        </tr>
+        <tr>
+          <td colspan="2">Global Functions</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="function-context">
+            [Function Execution] Context #1 (exampleFunc)
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Function Variables</td>
+        </tr>
+        <tr>
+          <td colspan="2">Function Parameters</td>
+        </tr>
+        <tr>
+          <td colspan="2">Inner Functions</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="function-context">
+            [Function Execution] Context #2 (nestedFunc)
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Function Variables</td>
+        </tr>
+        <tr>
+          <td colspan="2">Function Parameters</td>
+        </tr>
+        <tr>
+          <td colspan="2">Inner Functions</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <p>
+        In the diagram, we have the Global Execution Context at the top,
+        representing the global scope. It contains global variables and
+        functions. Below the Global Execution Context, we have Function
+        Execution Contexts for specific functions. These contexts contain
+        function-specific variables, parameters, and inner functions. Each
+        function execution context is created when the corresponding function is
+        invoked. <br /><br />
+
+        Nested functions can create additional function execution contexts
+        within their parent function execution context, as shown in the diagram.
+        <br /><br />
+
+        Please note that the diagram is a simplified representation of execution
+        contexts and their relationships. In practice, there can be more complex
+        scenarios and interactions between execution contexts based on function
+        calls, closures, and other JavaScript features.
+      </p>
+    </div>
+  </body>
+</html>

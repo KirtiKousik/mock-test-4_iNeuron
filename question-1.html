@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION-1</title>
+
+    <style>
+      .static-example {
+        position: static;
+      }
+
+      .relative-example {
+        position: relative;
+        top: 20px;
+        left: 30px;
+      }
+
+      .relative-parent {
+        position: relative;
+      }
+
+      .absolute-example {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+
+      .fixed-example {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+
+      .sticky-example {
+        position: sticky;
+        top: 50px;
+        right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- example: static -->
+    <div class="static-example">This is a static positioned element.</div>
+
+    <!-- example: relative -->
+    <div class="relative-example">This is a relatively positioned element.</div>
+
+    <!-- example: absolute -->
+    <div class="relative-parent">
+      <div class="absolute-example">
+        This is an absolutely positioned element.
+      </div>
+    </div>
+
+    <!-- example: fixed -->
+    <div class="fixed-example">This is a fixed positioned element.</div>
+
+    <!-- example: sticky -->
+    <div class="sticky-example">This is a sticky positioned element.</div>
+  </body>
+</html>
